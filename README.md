@@ -22,4 +22,6 @@
         .....
     })
 - Gom các component vào thành các module, để tùy dịch vụ nào sử dụng thì sẽ lazy load module đó ra sử dụng    
+- Thường chỉ làm việc trên 2 file: component.html và component.ts
+- Binding Value là giá trị truyền từ component.ts sang component.html
 ```
