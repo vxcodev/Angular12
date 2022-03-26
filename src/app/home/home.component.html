@@ -1,12 +1,22 @@
 <section>
     <h3 class="my-text">
-        Đây là component Home. Xin chào {{name}}
+        Đây là component Home.
     </h3>
     <p>Chứa các giao diện đã được đóng gói cho chức năng Home</p>
     <p>Code css không ảnh hưởng đến thành phần bên ngoài của component</p>
 </section>
 <section>
+    <h4>Data Binding Value. Xin chào {{name}}</h4>
     <input type="text" value="{{name}}">
+    
+</section>
+<section>
+    <h4>Data Binding Properties</h4>
     <input type="text" [value]="birthday">
     <input [title] ="titleNote + name + ' ?'" type="text" [placeholder] ="addressHolder">
+</section>
+<section>
+    <h4>Data Binding *ngIf - Kết nối giá trị từ code => html</h4>
+    <i *ngIf="age >= 18">Bạn đã đủ 18 tuổi</i>
+    <i *ngIf="age < 18">Bạn chưa đủ 18 tuổi</i>
 </section>

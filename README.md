@@ -24,14 +24,21 @@
 - Gom các component vào thành các module, để tùy dịch vụ nào sử dụng thì sẽ lazy load module đó ra sử dụng    
 - Thường chỉ làm việc trên 2 file: component.html và component.ts
 ```
-### Data Binding Value
+### Data Binding Value - Kết nối giá trị từ Code => Html
 ```
 - Binding Value là giá trị truyền từ component.ts sang component.html
 - Cú phảp: {{TenBien}}
 ```
-### Data Binding Properties
+### Data Binding Properties - Kết nối giá trị từ Code => Html
 ```
 - Truyền dữ liệu từ trong code sang html. Chỉ sử dụng khai báo cho các attribute bên trong thẻ html
 - Cú pháp <TheHtml [attrName]= "TenBien">
 - Angular là ngôn ngữ Two Way Binding
+```
+### Data Binding *ngIf - Kết nối giá trị từ Code => Html
+```
+- Khai báo trong thẻ html
+- So sánh bằng phải sử dụng ===
+- Có thể kết hợp nhiều điều kiện
+- Cú pháp <TagHtml *ngIf = " DieuKien1 && DieuKien2 || DieuKien3 ">
 ```
