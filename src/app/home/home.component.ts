@@ -9,6 +9,9 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
   public name = "Bảo Lộc 87";
+  public birthday ="29/02/1988";
+  public addressHolder = 'Nhập địa chỉ';
+  public titleNote = 'Đây là địa chỉ ';
 
   ngOnInit(): void {
   }

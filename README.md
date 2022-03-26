@@ -23,5 +23,15 @@
     })
 - Gom các component vào thành các module, để tùy dịch vụ nào sử dụng thì sẽ lazy load module đó ra sử dụng    
 - Thường chỉ làm việc trên 2 file: component.html và component.ts
+```
+### Data Binding Value
+```
 - Binding Value là giá trị truyền từ component.ts sang component.html
+- Cú phảp: {{TenBien}}
+```
+### Data Binding Properties
+```
+- Truyền dữ liệu từ trong code sang html. Chỉ sử dụng khai báo cho các attribute bên trong thẻ html
+- Cú pháp <TheHtml [attrName]= "TenBien">
+- Angular là ngôn ngữ Two Way Binding
 ```

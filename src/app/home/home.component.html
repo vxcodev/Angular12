@@ -1,5 +1,12 @@
-<h3 class="my-text">
-    Đây là component Home. Xin chào {{name}}
-</h3>
-<p>Chứa các giao diện đã được đóng gói cho chức năng Home</p>
-<p>Code css không ảnh hưởng đến thành phần bên ngoài của component</p>
+<section>
+    <h3 class="my-text">
+        Đây là component Home. Xin chào {{name}}
+    </h3>
+    <p>Chứa các giao diện đã được đóng gói cho chức năng Home</p>
+    <p>Code css không ảnh hưởng đến thành phần bên ngoài của component</p>
+</section>
+<section>
+    <input type="text" value="{{name}}">
+    <input type="text" [value]="birthday">
+    <input [title] ="titleNote + name + ' ?'" type="text" [placeholder] ="addressHolder">
+</section>
