@@ -67,3 +67,12 @@
 - Khi có xuất hiện dấu () là gửi dữ liệu từ html => code
 - Khi có dấu [] là lấy dữ liệu trong code => html
 ```
+### ng-template : Viết if then else trong html
+```
+- Bên trong ng-template có thể là text, html, component
+- Cú pháp câu điều kiện if-then-else và ng-template:
+ + Html: <TagHtml *ngIf = " DieuKien; then GiaTri; else GiaTri "></TagHtml>
+ + ng-template: <ng-template #GiaTri> ... </ng-template>
+- Trong thẻ ng-template bắt buộc phải có ký tự # ở đầu giá trị
+- Performance sẽ nhanh hơn so với dùng đơn thuần *ngIf
+```

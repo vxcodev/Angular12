@@ -26,3 +26,11 @@
     <h5>Xin chào <b>{{name2}}</b></h5>
     <button (click)="resetName()">Reset Tên</button>
 </section>
+<section>
+    <h4>ngIf: if-then-else và ng-template</h4>
+    <p>Nhập số tuổi: <input type="text" [(ngModel)]="age2"></p>
+    <div *ngIf="age2 >= 18; then old; else young"></div>
+    <ng-template #other>Bạn vui lòng nhập số tuổi</ng-template>
+    <ng-template #old>Bạn đã đủ 18 tuổi</ng-template>
+    <ng-template #young>Bạn chưa đủ 18 tuổi</ng-template>
+</section>

@@ -14,6 +14,7 @@ export class HomeComponent implements OnInit {
   public addressHolder = 'Nhập địa chỉ';
   public titleNote = 'Đây là địa chỉ ';
   public age = 16;
+  public age2 = 19;
   public name2 = "Bình Nam";
 
   ngOnInit(): void {
