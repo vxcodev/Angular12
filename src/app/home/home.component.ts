@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -13,8 +14,14 @@ export class HomeComponent implements OnInit {
   public addressHolder = 'Nhập địa chỉ';
   public titleNote = 'Đây là địa chỉ ';
   public age = 16;
+  public name2 = "Bình Nam";
 
   ngOnInit(): void {
   }
+  public resetName(): void{
+    console.log("Okie");
+    this.name2 = '';
+  }
+  
 
 }

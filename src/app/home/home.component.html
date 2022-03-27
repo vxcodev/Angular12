@@ -20,3 +20,9 @@
     <i *ngIf="age >= 18">Bạn đã đủ 18 tuổi</i>
     <i *ngIf="age < 18">Bạn chưa đủ 18 tuổi</i>
 </section>
+<section>
+    <h4>Data Binding Events binding</h4>
+    <input type="text" [(ngModel)]="name2" placeholder="Nhập tên mới">
+    <h5>Xin chào <b>{{name2}}</b></h5>
+    <button (click)="resetName()">Reset Tên</button>
+</section>

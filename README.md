@@ -42,3 +42,28 @@
 - Có thể kết hợp nhiều điều kiện
 - Cú pháp <TagHtml *ngIf = " DieuKien1 && DieuKien2 || DieuKien3 ">
 ```
+### Data Binding Event binding - ngModel - Two way binding - Liên kết 2 chiều và các sự kiện
+* Truyền dữ liệu từ HTML => code
+```
+- Khai báo sự kiện bên html: (TenSuKien)="TenHam()"
+- Khai báo hàm bên TS: PhamVi TenHam() : KieuTraVe { // Xử lý code }
+- Để truyền dữ liệu qua form ta import FormsModule trong app.module.ts
+- Khai báo FormModule trong imports của NgModule
+        @NgModule({
+        declarations: [
+            AppComponent,
+            HomeComponent,
+            AboutComponent
+        ],
+        imports: [
+            BrowserModule,
+            AppRoutingModule,
+            FormsModule
+        ],
+        providers: [],
+        bootstrap: [AppComponent]
+        })
+- Dùng cú pháp engine model (ngModel) để lấy dữ liệu từ form
+- Khi có xuất hiện dấu () là gửi dữ liệu từ html => code
+- Khi có dấu [] là lấy dữ liệu trong code => html
+```
